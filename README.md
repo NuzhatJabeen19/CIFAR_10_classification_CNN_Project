@@ -83,8 +83,11 @@ Models/
   Achieves the highest training accuracy and matches the fine-tuned ResNet50 on validation and test accuracy, demonstrating that a well-designed CNN can perform as well as transfer learning when trained properly.
 
 ## Recommendations
-For Model 2, increase the number of training epochs to improve results with augmented data.
-Experiment with more data or different architectures for further improvements.
+- For Model 2, increase the number of training epochs to improve results with augmented data.
+- Experiment with more data or different architectures for further improvements.
+- further Tune hyperparameters (learning rate, batch size, optimizer, dropout) for performance improvement.
+- Try different pretrained models (EfficientNet, MobileNetV2, DenseNet) and custom CNNs.
+- Apply advanced data augmentation (e.g., CutMix, MixUp, random erasing).
 
 
 ## Model Checkpoints & Saved Models
