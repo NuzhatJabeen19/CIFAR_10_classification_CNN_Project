@@ -64,9 +64,17 @@ Models/
 
 ## Insights
 
-- Fine-tuning all layers of ResNet50 or using a well-designed custom CNN yields the best results.
-- Data augmentation and input resizing alone are not sufficient for high accuracy.
-- Monitoring validation and test accuracy is crucial for assessing model generalization.
+- **Model 1 (ResNet50 Transfer Learning):**  
+  Achieves moderate accuracy, showing the benefit of transfer learning, but is limited by not fine-tuning deeper layers.
+
+- **Model 2 (ResNet50 + Data Augmentation + Resizing):**  
+  Performs poorly, suggesting that data augmentation and resizing alone are not sufficient and may require further tuning or more training epochs.
+
+- **Model 3 (ResNet50, all layers unfrozen):**  
+  Fine-tuning the entire ResNet50 model leads to a significant boost in performance, indicating the importance of allowing the model to adapt to the new dataset.
+
+- **Model 4 (Custom CNN from Scratch):**  
+  Achieves the highest training accuracy and matches the fine-tuned ResNet50 on validation and test accuracy, demonstrating that a well-designed CNN can perform as well as transfer learning when trained properly.
 
 ## Model Checkpoints & Saved Models
 
@@ -75,7 +83,7 @@ Models/
 
 ## License
 
-This project is licensed under the MIT License.
+
 
 ---
 
