@@ -64,6 +64,12 @@ Models/
 
 ## Insights
 
+- Using only 30,000 samples speeds up training but may limit maximum achievable accuracy.
+- Fine-tuning pretrained models or building a deep custom CNN both yield strong results.
+- Data augmentation and resizing require more epochs to be effective.
+- Monitoring validation and test accuracy is crucial for model selection.
+
+
 - **Model 1 (ResNet50 Transfer Learning):**  
   Achieves moderate accuracy, showing the benefit of transfer learning, but is limited by not fine-tuning deeper layers.
 
@@ -75,6 +81,11 @@ Models/
 
 - **Model 4 (Custom CNN from Scratch):**  
   Achieves the highest training accuracy and matches the fine-tuned ResNet50 on validation and test accuracy, demonstrating that a well-designed CNN can perform as well as transfer learning when trained properly.
+
+## Recommendations
+For Model 2, increase the number of training epochs to improve results with augmented data.
+Experiment with more data or different architectures for further improvements.
+
 
 ## Model Checkpoints & Saved Models
 
