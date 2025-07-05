@@ -24,10 +24,10 @@ Models/
 
 ## Features
 
-- **Data Loading & Visualization:** Loads CIFAR-10, visualizes samples and label distribution.
+- **Data Loading & Visualization:** Loads CIFAR-10, visualizes samples and label distribution. (first 30,000 images are used for training)
 - **Preprocessing:** Normalizes images and prepares categorical labels.
 - **Model 1:** Transfer learning with ResNet50 (frozen layers).
-- **Model 2:** Transfer learning with ResNet50, data augmentation, and input resizing.
+- **Model 2:** Transfer learning with ResNet50, data augmentation, and input resizing. (as being slow trained, fewer epochs are done in comparison to other models)
 - **Model 3:** Fine-tuned ResNet50 (all layers trainable).
 - **Model 4:** Custom CNN built from scratch.
 - **Training & Evaluation:** Includes training/validation plots, accuracy/loss metrics, and confusion matrices.
